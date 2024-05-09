@@ -1,0 +1,56 @@
+body {
+  margin: 30px auto;
+}
+
+#wrap {
+  margin: 0 auto;
+  border: 1px solid #dadada;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px 0px #dadada;
+  height: 750px;
+  width: 900px;
+  padding: 80px 50px;
+
+}
+
+.to {
+  padding-left: 20px;
+  margin-bottom: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a:hover {
+  /* border-bottom: 3px solid black; */
+  text-decoration: underline;
+}
+
+.container {
+  width: 730px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 4px double #dadada;
+}
+
+.header > span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main{
+  margin-top: 30px;
+}
+
+.from {
+  float: right;
+  padding: 30px;
+}

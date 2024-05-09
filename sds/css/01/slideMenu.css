@@ -1,0 +1,73 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  width: 1000px;
+  height: 100px;
+
+}
+
+nav {
+  width: 880px;
+  height: 80%;
+  background: bisque;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar > ul > li.high_bar {
+  float: left;
+  padding: 30px 50px;
+  /* position: relative; */
+
+  /* transition-property: height;
+  transition-duration: 3s;
+  transition-timing-function: linear; */
+  transition: all linear 3s;
+}
+
+.high_bar > a {
+  display: block;   /* inline 값을 가진 a 태그를 block 값으로 만들어주기 위함*/
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.low_bar {
+  display: none;    /* 하위메뉴 숨기기 */
+}
+
+/* 마우스를 올리면 transition 발동해서 적용될 곳 */
+#navbar > ul > li.high_bar:hover > ul > li {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  border: 1px solid #dadada;
+  transform: translate(-80px, 30px) ;
+  background: rgba(255, 166, 0, 0.479);
+}
+
+#navbar > ul > li.high_bar:hover > ul > li  > a{
+  text-align: center;
+  padding: 0 40px;
+}
+
+ #navbar > ul > li.high_bar:hover > ul {
+  /* position: absolute;
+  top: 100%;     하위메뉴를 상위메뉴 아래에 위치 
+  left: 5px;     상위 메뉴 왼쪽 끝 맞추기
+  width: 100%;   부모 너비 그대로 적용  */
+  height: 150px;
+} 
+
+/* 
+  position: absolute;
+  => 부모의 속박에서 벗어나 화면상에 어디든지 원하는 위치에 위치시킬 수 있다.
+     단, 상위 엘리먼트 중에 position:relative; 인 엘리먼트가 존재하면 
+     해당 엘리먼트의 내부 영역에서만 자유롭게 존재할 수 있다.
+*/

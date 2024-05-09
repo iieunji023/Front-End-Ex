@@ -1,0 +1,10 @@
+#box {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 192, 203, 0.514);
+  transition: all ease 1s;
+}
+
+#box:hover {
+  transform: scale(0.5) rotate(720deg);
+}

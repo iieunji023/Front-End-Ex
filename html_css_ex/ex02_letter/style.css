@@ -1,0 +1,79 @@
+body {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+#wrap {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#container-1 {
+  width: 280px;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  height: 220px;
+  /* display: inline-block; */
+  float: left;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#container-1 > ul > li:hover {
+  height: 20px;
+  background: #dadada8e;
+}
+
+#container-2  {
+  width: 750px;
+  display: inline-block;
+  /* float: right; */
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  padding: 0 50px;
+
+}
+
+.container-3 {
+  margin: 0 auto;
+  width: 650px;
+}
+
+#container-2 > .to > h2 > a,
+#container-2 > .from > h2 > a {
+  font-style: italic;
+}
+
+#container-2 > .to > h2 > a:hover,
+#container-2 > .from > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.to {
+  margin-bottom: 40px;
+  
+}
+
+.container-3 > div.header {
+  padding: 10px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px double #dadada;
+}
+
+.container-3 > div.header > span {
+  font-weight: bold;;
+}
+
+.from {
+  margin-top: 40px;
+  text-align: right;
+}
